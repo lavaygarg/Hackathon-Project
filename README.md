@@ -1,31 +1,39 @@
 # AI/ML Hackathon Project
 
 ## Environment
-This project uses a virtual environment `hackathon_env`.
+This project requires Python 3.12 and several deep learning libraries.
+It is recommended to set up a fresh virtual environment:
 
-### Key Libraries Installed
-- **Data Manipulation**: pandas, numpy
+```bash
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
+
+### Key Libraries
+- **Deep Learning**: TensorFlow, Keras
+- **Data Manipulation**: pandas, numpy, opencv-python
 - **Visualization**: matplotlib, seaborn
 - **Machine Learning**: scikit-learn
 - **Notebooks**: jupyter, ipykernel
 
 ## Structure
 - `data/`: Store your raw and processed datasets here.
-- `notebooks/`: Create Jupyter notebooks for experimentation and analysis.
-- `models/`: Save trained models (e.g., .pkl, .h5 files) here.
+- `semantic_segmentation.ipynb`: Main notebook for the hackathon challenge.
 - `app.py`: Main application script.
 - `requirements.txt`: List of dependencies.
 
 ## Usage
 1. Activate the environment:
    ```bash
-   source hackathon_env/bin/activate
+   source venv/bin/activate
    ```
-2. Run the main script:
+2. Install dependencies (if not already done):
    ```bash
-   python app.py
+   pip install -r requirements.txt
    ```
-3. Start Jupyter Notebook:
+3. Start Jupyter Notebook to work on the challenge:
    ```bash
-   jupyter notebook
+   jupyter notebook semantic_segmentation.ipynb
+   ```
    ```

@@ -129,3 +129,5 @@ python-dotenv
 tqdm
 rich
 watchdog
+tensorflow
+tensorflow-io
